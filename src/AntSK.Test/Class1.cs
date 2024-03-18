@@ -18,5 +18,18 @@ namespace AntSK.Test
                    我是一个AI 知识库/智能体项目
                 """;
         }
+
+        [Description("AntSK:获取订单信息")]
+        [return: Description("订单信息")]
+        public string GetOrder([Description("订单号")] string id)
+        {
+            return $"""
+                    订单ID: {id}
+                    商品名：小米MIX4
+                    数量：1个
+                    价格：4999元
+                    收货地址：上海市黄浦区
+                """;
+        }
     }
 }
